@@ -11,9 +11,9 @@ body {
 
 :root {  /*criando variaveis no css*/
     --tamanho-header: 80px; /*80 px torna fixo o tamanho da header*/
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); /*fazendo contas para o banner n pegar o header e footer, vh acompanha o tamanho da tela*/
+    --tamanho-banner: calc(50vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); /*fazendo contas para o banner n pegar o header e footer, vh acompanha o tamanho da tela*/
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
+    --tamanho-footer: 100px;
 }
 
 /* HEADER */
@@ -65,7 +65,7 @@ body {
 /* BODY */
 
 .banner {
-    height: 200px;
+    height: var(--tamanho-banner);
     color: white;
     background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
     background-size: cover;
@@ -136,7 +136,7 @@ body {
 
 .footer {
     background-color: #32b9cd;
-    height: 110px;
+    height: var(--tamanho-footer);
     color: #fff;
     display: flex;
     font-size: 15px;
