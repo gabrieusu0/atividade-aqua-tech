@@ -108,7 +108,6 @@ body {
 
 .box {
     display: flex;
-    flex-direction: row;
     flex-direction: row-reverse;
     align-items: center;
 }
@@ -126,6 +125,11 @@ body {
 
 .box img {
     width: 170px;
+    margin-left: 5px;
+}
+
+.box p {
+    text-align: center;
 }
 
 /* FOOTER */
