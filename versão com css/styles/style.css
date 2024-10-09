@@ -18,12 +18,12 @@ body {
 
 /* HEADER */
 
-.header {
+.header { /*define o tamanho do header*/
     height: var(--tamanho-header);
-    border-bottom: 2px solid #32b9cd;
+    border-bottom: 10px solid #32b9cd;
 }
 
-.container {
+.container { /*define como será os elementos dentro*/
     display: flex;
     width: 80%;
     margin: auto;
@@ -40,7 +40,7 @@ body {
 
 .header a {
     text-decoration: none;
-    color: #e3b062;
+    color: #fff;
 }
 
 .agora {/* estiliza o inicial no header */
@@ -59,13 +59,13 @@ body {
 .titulo {
     color: #32b9cd;
     width: fit-content;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 /* BODY */
 
 .banner {
-    height: var(--tamanho-banner);
+    height: 200px;
     color: white;
     background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
     background-size: cover;
@@ -92,21 +92,36 @@ body {
 .social {
     background-color: #e5e5e5;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .social .container .boxes{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     padding: 30px 0;
+    width: 700px;
+
 }
 
 .box {
     display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.box .logo {
+    display: flex;
     flex-direction: column;
     align-items: center;
+} 
+
+.box h4 {
+    display: flex;
+    flex-direction: column;
 }
 
 .box img {
@@ -117,7 +132,7 @@ body {
 
 .footer {
     background-color: #32b9cd;
-    height: var(--tamanho-footer);
+    height: 110px;
     color: #fff;
     display: flex;
     font-size: 15px;
